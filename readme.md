@@ -1,5 +1,7 @@
 This Updatable app pretty much the one more implementation of the Cordova-App-Loader found on github here:
-https://github.com/markmarijnissen/cordova-app-loader with improved setup procedure description for dummies like myself.
+https://github.com/markmarijnissen/cordova-app-loader with improved setup procedure description for dummies like myself,
+because I had a hard times falling into every pit possible while learning Cordova technology from zero. So I believe, 
+it could be helpful for someone.  
  
 Settings things up and adding updatability into your project. For any CLI I use 'ionic' as example.
 
