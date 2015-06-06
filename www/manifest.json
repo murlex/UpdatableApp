@@ -1,0 +1,41 @@
+{
+  "files": {
+    "ionic": {
+      "version": "179480e56d4b4faac332b2abaa43b31abda071f2",
+      "filename": "lib/ionic/js/ionic.bundle.js"
+    },
+    "app": {
+      "version": "0d7288e58d9aae330951db00c940d769c066b82f",
+      "filename": "js/app.js"
+    },
+    "sillycontroller": {
+      "version": "333977e364e128e35335ff9129dc450581f0647d",
+      "filename": "js/controllers.js"
+    },
+    "services": {
+      "version": "b4a8cfd01892216f6bf8bb14e02414f996f137f7",
+      "filename": "js/SelfUpdateService.js"
+    },
+    "style": {
+      "version": "6f9b1279500ace5ca71cbb43470110c0e3d7cbe7",
+      "filename": "css/style.css"
+    },
+    "ionicStyle": {
+      "version": "58c76e806bf43078d4243c542bbaa6b6807535e3",
+      "filename": "lib/ionic/css/ionic.css"
+    },
+    "htmlUpdateDemo": {
+      "version": "a050be1c74a7811b1cd8ef1e36cf78e5cdb3723f",
+      "filename": "templates/start.html"
+    }
+  },
+  "load": [
+    "lib/ionic/js/ionic.bundle.js",
+    "js/app.js",
+    "js/SelfUpdateService.js",
+    "js/controllers.js",
+    "lib/ionic/css/ionic.css",
+    "css/style.css"
+  ],
+  "version": "e54cc8004698ff736c0f1bb4b379b9a07e7cf94f"
+}
