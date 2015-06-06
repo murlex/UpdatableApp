@@ -3,16 +3,17 @@ https://github.com/markmarijnissen/cordova-app-loader with improved setup proced
 because I had a hard times falling into every pit possible while learning Cordova technology from zero. So I believe, 
 it could be helpful for someone.   
  
-#Settings things up and adding updatability into your project. For any CLI I use 'ionic' as example.
+#Settings things up and adding updatability into your project. 
+For any CLI I use 'ionic' as example.
 
 1. Setup web server for app updates where contents of www folder should be copied
---* For the test purposes you can install simple node.js web server from here: https://www.npmjs.com/package/http-server
+* For the test purposes you can install simple node.js web server from here: https://www.npmjs.com/package/http-server
 2. Ensure the platforms needed has been added into your app (e.g. android)
---* ionic platform add anroid 
+* ionic platform add anroid 
 3. Ensure the following plugins were installed (file, whitelist and file-transfer)
---* ionic plugin add cordova-plugin-file
---* ionic plugin add cordova-plugin-file-transfer
---* ionic plugin add cordova-plugin-whitelist
+* ionic plugin add cordova-plugin-file
+* ionic plugin add cordova-plugin-file-transfer
+* ionic plugin add cordova-plugin-whitelist
 4. Copy bootstrap.js, cordova-app-loader-complete.js and autoupdate.js into www folder
 5. Into index.html add main cordova-app-loader script reference and it's bootstrap script reference just *after* cordova.js. 
 <script src="cordova-app-loader-complete.js"></script>
