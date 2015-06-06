@@ -16,9 +16,10 @@ For any CLI I use 'ionic' as example.
 #####ionic plugin add cordova-plugin-whitelist
 4. Copy bootstrap.js, cordova-app-loader-complete.js and autoupdate.js into www folder
 5. Into index.html add main cordova-app-loader script reference and it's bootstrap script reference just *after* cordova.js. 
-```html
+````html
 <script src="cordova-app-loader-complete.js"></script>
-<script src="bootstrap.js" timeout="5100" manifest="manifest.json" server="http://localhost:8080/"></script>```
+<script src="bootstrap.js" timeout="5100" manifest="manifest.json" server="http://localhost:8080/"></script>
+````
 6. Change *server* attribute to point to the root of your www where is index.html will resides.
 7. Copy my example of manifest.json into www folder and then update its contents to include all the files of your app.
 Fix manifest as follow:
@@ -28,12 +29,13 @@ From now on they be loaded by boostrap.js. You will need it just once and also w
 8. Write *window.BOOTSTRAP_OK = true* in your code when your app succesfully launches
 9. In some initialization place (1st controller?) DI 'SelfUpdateService' and call it's 'ensureUpdate()' function. This will update app as needed and also set some event handlers.
 10. Add into Index.html CSP meta tag:
-```html
-<meta http-equiv="Content-Security-Policy" content="default-src * 'self' cdvfile://*; style-src 'unsafe-inline' 'self' cdvfile://*; script-src 'self' 'unsafe-eval' cdvfile://*">```
+````html
+<meta http-equiv="Content-Security-Policy" content="default-src * 'self' cdvfile://*; style-src 'unsafe-inline' 'self' cdvfile://*; script-src 'self' 'unsafe-eval' cdvfile://*">````
 and into Cordova's *config.xml*
-```xml
+````xml
 <access origin="*"/>
-<allow-navigation href="*://*/*"/>```    
+<allow-navigation href="*://*/*"/>
+````    
 #Known problems:
 * HTML files (templates) don't get updated, though downloaded ok. This is because of relational 'templateUrl' based on installed app root instead of new cached root. 
 Will fix it some day... :) Maybe.     
