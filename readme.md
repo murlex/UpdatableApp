@@ -30,5 +30,9 @@ and into Cordova's config.xml
 <allow-navigation href="*://*/*"/>
     
 #Known problems:
-* HTML files (templates) don't get updated, though downloaded ok. This is because of relational 'templateUrl' based on Index.html. Will fix it some day... :) Maybe. 
+* HTML files (templates) don't get updated, though downloaded ok. This is because of relational 'templateUrl' based on installed app root instead of new cached root. 
+Will fix it some day... :) Maybe. 
     
+---    
+Best regards
+Alexander Futoryan.
